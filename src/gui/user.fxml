@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="180.0" style="-fx-background-color: #FF6D6D; -fx-border-color: #FF6D6D;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserController">
+   <top>
+      <TextField fx:id="UserName" alignment="CENTER" editable="false" prefHeight="9.0" prefWidth="243.0" style="-fx-background-color: #FF6D6D;" text="Jméno hráče" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+   </top>
+   <left>
+      <TextField fx:id="UserPoints" alignment="CENTER" editable="false" prefHeight="42.0" prefWidth="47.0" text="0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+   </left>
+   <center>
+      <TextField fx:id="playerMessage" editable="false" prefHeight="42.0" prefWidth="129.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+   </center>
+   <bottom>
+      <ProgressBar fx:id="UserProgress" prefWidth="200.0" progress="0.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
